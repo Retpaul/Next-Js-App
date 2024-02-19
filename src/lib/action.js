@@ -4,6 +4,7 @@ import { revalidatePath } from "next/cache";
 import { Post } from "./models";
 import { connectToDB } from "./utils";
 import { redirect } from "next/navigation";
+import { signOut } from "./auth";
 
 export const addPost = async (formData) => {
  
@@ -42,3 +43,8 @@ export const deletePost = async (formData) => {
     console.log(error);
   }
 };
+
+export async function handleLogout() {
+  "use server"
+  await signOut()
+}
