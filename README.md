@@ -1,2 +1,5 @@
-# investment-calculator
-Pure React investment Calculator
+# Next js app
+Next js 
+Server Components 
+Ssr
+Next Auth
